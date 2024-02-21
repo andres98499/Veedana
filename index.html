@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veedana</title>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="triangle" src="./img/logo.png" alt=""/>
+                <div></div>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./bio/bio.html" target="_blank">My Life</a></li>
+                <li><a href="#section2">Music</a></li>
+                <li><a href="#section3">Videos</a></li>
+                <li><a href="./shows/shows.html" target="_blank">Shows</a></li>
+                <li><a href="./contact/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <div class="slider">
+            <h1>VEEDANA: FEELING, SENATION, EMOTION</h1>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell cell-1" data-slide="#142e42 #77a0a8"></div>
+                <div class="carousel-cell cell-2" data-slide="#ef9a00 #6b4e84"></div>
+                <div class="carousel-cell cell-3" data-slide="#black yellow"></div>
+            </div>  
+        </div>
+       
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <img class ="gold wide" src="./img/wide.png" alt="">
+            </div>
+
+        <div class="right-side vid">
+            <div class="title">
+                <h1>Veedana</h1>
+                <h2>IS A DJ/EDM PRODUCER <br> FROM COLOMBIA</h2>
+            </div>
+
+            <p class="p">
+                Born In Colombia and raised in Florida, John Velasquez better known as Veedana Became interested in EDM at the Young age of 13. During the beginning of his 20s, he joined a promotion company named "Wa$ted Presents" where he met other like-minded people who shared his love for Electronic Music. This is where "VEEDANA" was born. Veedana later went on to open up for big celebrity DJs like Valentino Khan, Deorro, Yellow Claw, 4B, and many others. After he finished his service he went to join Full Sail University as a student to further his knowledge and career in the music industry. there he hopes to graduate and continue on his music journey.
+            </p>
+            <button><a href="./bio/bio.html" target="_blank">READ MY FULL BIO</a></button>
+        </div>
+    </div>
+    </section>
+
+    <section id="section2">
+        <div class="title">
+            <h1>Music</h1>
+        </div>
+        <div class="container">
+            <div class="left-side">
+                <iframe class="gold" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1442159947&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/user-630020849-759447755" title="Veedana" target="_blank" style="color: #cccccc; text-decoration: none;">Veedana</a> · <a href="https://soundcloud.com/user-630020849-759447755/shake-dat-bass-vol-001" title="Shake Dat Bass Vol. 1" target="_blank" style="color: #cccccc; text-decoration: none;">Shake Dat Bass Vol. 1</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <iframe class="gold" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1630970733&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/user-630020849-759447755" title="Veedana" target="_blank" style="color: #cccccc; text-decoration: none;">Veedana</a> · <a href="https://soundcloud.com/user-630020849-759447755/shake-dat-bass-vol-2-beach" title="Shake Dat Bass Vol. 2 Beach Edition" target="_blank" style="color: #cccccc; text-decoration: none;">Shake Dat Bass Vol. 2 Beach Edition</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section3">
+        <div class="container">
+            <div class="video-wrapper">
+                <div class="title">
+                <h1>Memories</h1>
+                </div>
+                <figure>
+                    <video class="video" autoplay>
+                        <source src="./video1.MP4">
+                    </video>
+
+                <button class="btn">
+                    <div class="icons stop">
+                        <i onclick="playVid()" class="fa-solid fa-play"></i>
+                        <i onclick="pauseVid()" class="fa-solid fa-pause"></i>
+                    </div>
+
+                    <div class="time">
+                        <label id="minuts">00</label>
+                        <label id="colon">:</label>
+                        <label id="seconds">00</label>
+                    </div>
+                </button>
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="containers">
+            <button><a href="./contact/contact.html" target="_blank">Get In Touch</a></button>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="container" style="padding-bottom:5rem;">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Follow Me</h1>
+                </div>
+            </div>
+            <div class="right-side">
+                <p class="txt">
+                        <a href="https://x.com/veedanaofficial?s=21&t=5qjGwkto_k4FCT7NQL_LkA">
+                        <ion-icon name="logo-twitter">X</ion-icon>
+                        </a>
+    
+                    <a href="https://soundcloud.com/user-630020849-759447755?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                        <ion-icon name="logo-soundcloud">Soundcloud</ion-icon>
+                        </a>
+    
+                    <a href="https://www.instagram.com/veedana_official?igshid=YmMyMTA2M2Y%3D">
+                        <ion-icon name="logo-instagram">Instagram</ion-icon>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container sides">
+            <div class="left-side">
+            <p class="p">
+                <a href="#section1">Top</a>
+            </p>
+            </div>
+            <div class="right-side">
+                <ul class="menu">
+                <li><a href="./bio/bio.html" target="_blank">My Life</a></li>
+                <li><a href="#section2">Music</a></li>
+                <li><a href="#section3">Videos</a></li>
+                <li><a href="./shows/shows.html" target="_blank">Shows</a></li>
+                <li><a href="./contact/contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="left-side">
+                <p>
+                    © COPYRIGHT Veedana 2024 . ALL rights reserved
+                </p>
+            </div>
+            <div class="right-side center">
+                <p>Term and conditions</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

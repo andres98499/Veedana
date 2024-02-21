@@ -1,0 +1,63 @@
+﻿.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    font-size: 14px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.logo .triangle {
+    width: 155px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+body
+{
+    background:url(./img/royal.jpg);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border:ridge;
+    border-color: black;
+    border-width: 2em;
+}
+
+.container { 
+    max-width: 40%;
+    margin: auto;
+    padding: 50px;
+    border: 10px solid darkred;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button{
+    background-color: #007bff;
+    color: #ffffff;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+    width: 100%;
+}
