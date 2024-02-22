@@ -345,6 +345,13 @@ button:hover {
     justify-content: space-between;
     padding: 2rem 5rem;
 }
+.txtLinks {
+    font-style: 24px;
+    display: contents;
+    gap: 4rem;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
 .txt span {
     color: #0152fc;
 }
