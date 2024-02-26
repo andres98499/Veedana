@@ -24,7 +24,6 @@ body
     background:url(./img/royal.jpg);
     font-family: Arial, sans-serif;
     text-align: center;
-    border:ridge;
     border-color: black;
     border-width: 2em;
 }
